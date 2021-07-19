@@ -23,7 +23,7 @@ $ cd ..
 #### Clone the package in catkin_ws/src/
 ```sh
 $ cd /home/workspace/catkin_ws/src/
-$ git clone https://github.com/udacity/RoboND-simple_arm.git simple_arm
+$ git clone https://github.com/TheodoroCardoso/robo-nd-project2.git
 ```
 
 #### Build the `simple_arm` package
