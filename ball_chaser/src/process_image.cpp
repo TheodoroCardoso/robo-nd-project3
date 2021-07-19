@@ -49,10 +49,11 @@ void process_image_callback(const sensor_msgs::Image img)
     {
         // Average i and j to get the center pixel. Get the remainder to ignore the height since only the horizontal distance matters.    
         ball_center_x = (((i+j)/2) % img.step);
-        ROS_INFO_STREAM("i = " + std::to_string(i) + " j = " + std::to_string(j) + " h = " + std::to_string(img.height) + " bc_x= " + std::to_string(ball_center_x));
+        //ROS_INFO_STREAM("i = " + std::to_string(i) + " j = " + std::to_string(j) + " h = " + std::to_string(img.height) + " bc_x= " + std::to_string(ball_center_x));
+        
         // Get the center distance in absolute values.
         ball_center_x = (ball_center_x / img.step);
-        ROS_INFO_STREAM("step = " + std::to_string(img.step) + " bc_x= " + std::to_string(ball_center_x));
+        //ROS_INFO_STREAM("step = " + std::to_string(img.step) + " bc_x= " + std::to_string(ball_center_x));
 
         if (ball_center_x < 0.33 && section != 1) // ball in the left
         {
@@ -74,8 +75,7 @@ void process_image_callback(const sensor_msgs::Image img)
     {
         drive_robot(0,0);
         section = 0;
-    }
-    
+    }    
 }
 
 int main(int argc, char** argv)
