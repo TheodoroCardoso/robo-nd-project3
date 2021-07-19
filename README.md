@@ -26,21 +26,16 @@ $ cd /home/workspace/catkin_ws/src/
 $ git clone https://github.com/TheodoroCardoso/robo-nd-project2.git
 ```
 
-#### Build the `simple_arm` package
+#### Build the packages
 ```sh
 $ cd /home/workspace/catkin_ws/ 
 $ catkin_make
 ```
 
-#### After building the package, source your environment
+#### After building the packages, source your environment
 ```sh
 $ cd /home/workspace/catkin_ws/
 $ source devel/setup.bash
-```
-
-#### Make sure to check and install any missing dependencies
-```sh
-$ rosdep install -i simple_arm
 ```
 
 #### Once `my_robot` and  `ball_chaser` packages have been built, you can launch the simulation environment using
