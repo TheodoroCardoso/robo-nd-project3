@@ -1,13 +1,14 @@
 [![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
 # robo-nd-project3
 
-Where Am I? - Robotics Software Engineer Nanodegree @Udacity
+Where Am I? - 3rd project for Robotics Software Engineer Nanodegree @Udacity
 
-A differential drive mobile robot that chases a white ball using image processing.
-To interact with the scene just move the ball around in Gazebo. As long as it's in the camera FOV, the robot drives towards it.
+This project uses the Adaptative Monte Carlo Localization package to localize a differential drive mobile robot in a 4x2 meters performance environment.
 
 The Gazebo world design intends to replicate the **WorldSkills Mobile Robotics** next challange in a simplified version.
 For more information please take a look on a brief competition overview at the end.
+
+![alt text](https://github.com/TheodoroCardoso/robo-nd-project3/blob/main/Localized%20Robot.png)
 
 ## How to Launch the simulation?
 
@@ -23,7 +24,7 @@ $ cd ..
 #### Clone the package in catkin_ws/src/
 ```sh
 $ cd /home/workspace/catkin_ws/src/
-$ git clone https://github.com/TheodoroCardoso/robo-nd-project2.git
+$ git clone https://github.com/TheodoroCardoso/robo-nd-project3.git
 ```
 
 #### Build the packages
@@ -38,19 +39,20 @@ $ cd /home/workspace/catkin_ws/
 $ source devel/setup.bash
 ```
 
-#### Once `my_robot` and  `ball_chaser` packages have been built, you can launch the simulation environment using
+#### Once `my_robot` package has been built, you can launch the simulation environment using
 ```sh
 $ roslaunch my_robot world.launch
 ```
 
-#### Make the robot chase te ball
+#### To run the AMCL algorithm
 Open a new terminal and type the following:
 ```sh
 $ cd /home/workspace/catkin_ws/
 $ source devel/setup.bash
-$ roslaunch ball_chaser ball_chaser.launch
+$ roslaunch my_robot amcl.launch
 ```
 
+#### That's it! Now just give the robot a 2D Nav Goal using Rviz and watch the localization process.
 ----
 
 ## Learn more about WorldSkills
