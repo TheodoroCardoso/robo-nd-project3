@@ -68,4 +68,4 @@ In previous years LabVIEW was the mandatory programming language, but for the ne
 ### The Robot's Task
 The WS Shanghai 2022 challange simulates a hospital.
 
-In the actual compeition teams will develop mobile robots that have to carry medicines and hazardous materials represented by colored cubes and gurneys represented by a four wheeled chassis.
+In the actual competition teams will develop mobile robots that have to carry medicines and hazardous materials represented by colored cubes and gurneys represented by a four wheeled chassis.
