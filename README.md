@@ -24,7 +24,7 @@ $ cd ..
 #### Clone the package in catkin_ws/src/
 ```sh
 $ cd /home/workspace/catkin_ws/src/
-$ git clone https://github.com/TheodoroCardoso/robo-nd-project3.git
+$ git clone https://github.com/TheodoroCardoso/where-am-i.git
 ```
 
 #### Build the packages
