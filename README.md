@@ -1,7 +1,7 @@
 [![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
-# robo-nd-project3
+# Where Am I? 
 
-Where Am I? - 3rd project for Robotics Software Engineer Nanodegree @Udacity
+3rd project for Robotics Software Engineer Nanodegree @Udacity
 
 This project uses the Adaptative Monte Carlo Localization package to localize a differential drive mobile robot in a 4x2 meters performance environment.
 
